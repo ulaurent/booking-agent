@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/booking")
 public class BookingController {
-    @GetMapping("/status")
-    public String status() {
+    @GetMapping("/availability")
+    public String status(String message) {
         return "Reservation is confirmed";
     }
 
